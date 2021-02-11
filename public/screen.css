@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -9,4 +11,44 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  /* background-image: url('Space.jpg');
+  background-repeat: no-repeat; */
+  background-color: rgb(0, 0, 161);
+  background-size: 100%;
 }
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+section {
+  min-width: 20rem;
+  border-radius: 0.3rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+  border: solid burlywood;
+  color: white;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+fieldset {
+  border: none;
+}
+fieldset i {
+  color: white;
+  font-size: 30px;
+}
+/* img {
+  width: 200px;
+  height: 100px;
+} */
