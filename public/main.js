@@ -48,30 +48,34 @@ function main() {
   //  Comparisons
   const firstPlayerChoice = document.querySelector('.firstPlayer h3')
   const secondPlayerChoice = document.querySelector('.secondPlayer h3')
+  const winnerButton = document.querySelector('section.winner button')
 
   function winner() {
     if (firstPlayerChoice === secondPlayerChoice) {
       const draw = document.querySelector('section footer')
       draw.textContent = 'ITS A DRAW'
-    }
-    if (firstPlayerChoice === 'Rock' && secondPlayerChoice === 'Scissors') {
+    } else if (
+      firstPlayerChoice === 'Rock' &&
+      secondPlayerChoice === 'Scissors'
+    ) {
+      const winner = document.querySelector('.firstPlayer footer')
+      winner.textContent = 'YOU WON!'
+    } else if (
+      firstPlayerChoice === 'Scissor' &&
+      secondPlayerChoice === 'Rock'
+    ) {
+      const winner = document.querySelector('.firstPlayer footer')
+      winner.textContent = 'YOU WON!'
+    } else if (firstPlayerChoice === 'Paper' && secondPlayerChoice === 'Rock') {
       const winner = document.querySelector('.firstPlayer footer')
       winner.textContent = 'YOU WON!'
     }
-    if (firstPlayerChoice === 'Scissor' && secondPlayerChoice === 'Rock') {
-      const winner = document.querySelector('.firstPlayer footer')
-      winner.textContent = 'YOU WON!'
-    }
-    if (firstPlayerChoice === 'Paper' && secondPlayerChoice === 'Rock') {
-      const winner = document.querySelector('.firstPlayer footer')
-      winner.textContent = 'YOU WON!'
-    } else {
-      const winner = document.querySelector('.secondPlayer footer')
-      winner.textContent = 'YOU WON!'
-    }
+    // } else {
+    //   const winner = document.querySelector('.secondPlayer footer')
+    //   winner.textContent = 'YOU WON!'
+    // }
   }
-  firstPlayerChoice.addEventListener('click', winner)
-  secondPlayerChoice.addEventListener('click', winner)
+  winnerButton.addEventListener('click', winner)
 }
 
 document.addEventListener('DOMContentLoaded', main)

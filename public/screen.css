@@ -11,9 +11,9 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  /* background-image: url('Space.jpg');
-  background-repeat: no-repeat; */
-  background-color: rgb(0, 0, 161);
+  background-image: url('Space.jpg');
+  background-repeat: no-repeat;
+  /* background-color: rgb(0, 0, 161); */
   background-size: 100%;
 }
 main {
@@ -25,7 +25,6 @@ section {
   min-width: 20rem;
   border-radius: 0.3rem;
   margin-bottom: 3rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,19 +33,31 @@ header {
   font-size: 3rem;
   text-align: center;
   font-family: 'Major Mono Display', monospace;
-  border: solid burlywood;
+  background-color: rgba(35, 40, 70, 0.342);
+  border: thin solid rgba(0, 0, 0, 0.349);
   color: white;
 }
 footer {
   position: absolute;
   bottom: 0;
 }
+.tryAgain button {
+  background-color: rgba(0, 0, 0, 0.582);
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+section footer {
+  background-color: white;
+}
 fieldset {
   border: none;
 }
 fieldset i {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
+  background-color: rgba(35, 40, 70, 0.39);
+  border: thin solid rgba(0, 0, 0, 0.521);
 }
 h3 {
   display: none;
@@ -54,11 +65,20 @@ h3 {
 h2 {
   color: burlywood;
 }
-footer {
-  color: burlywood;
-  background-color: black;
+section.winner {
+  justify-content: center;
+}
+section.winner button {
+  background-color: rgba(0, 0, 0, 0.582);
+  color: white;
+  border: none;
+  font-size: 20px;
 }
 /* img {
-  width: 200px;
-  height: 100px;
+  background-color: rgba(35, 40, 70, 0.151);
 } */
+@media (max-width: 800px) {
+  body {
+    background-repeat: round;
+  }
+}
