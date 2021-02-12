@@ -48,6 +48,16 @@ fieldset i {
   color: white;
   font-size: 30px;
 }
+h3 {
+  display: none;
+}
+h2 {
+  color: burlywood;
+}
+footer {
+  color: burlywood;
+  background-color: black;
+}
 /* img {
   width: 200px;
   height: 100px;
