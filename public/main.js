@@ -1,58 +1,52 @@
 function main() {
   // Rock Team 1
   const rockTeam1 = document.querySelector('.firstPlayer fieldset i.rock')
-  function addRock1() {
+
+  function userChoice1(choice) {
     const thingClickedOn = document.querySelector('.firstPlayer h3')
     const firstPlayer = document.querySelector('.firstPlayer footer')
     const teamHeader = document.querySelector('.firstPlayer h2')
     const playerName = teamHeader.textContent
     firstPlayer.textContent = `${playerName} has chosen`
-    thingClickedOn.textContent = 'Rock'
+    thingClickedOn.textContent = choice
+  }
+  function userChoice2(choice) {
+    const thingClickedOn = document.querySelector('.secondPlayer h3')
+    const firstPlayer = document.querySelector('.secondPlayer footer')
+    const teamHeader = document.querySelector('.secondPlayer h2')
+    const playerName = teamHeader.textContent
+    firstPlayer.textContent = `${playerName} has chosen`
+    thingClickedOn.textContent = choice
+  }
+
+  function addRock1() {
+    userChoice1('Rock')
   }
   rockTeam1.addEventListener('click', addRock1)
   // Paper Team 1
   const paperTeam1 = document.querySelector('.firstPlayer fieldset i.paper')
   function addPaper1() {
-    const thingClickedOn = document.querySelector('.firstPlayer h3')
-    const firstPlayer = document.querySelector('.firstPlayer footer')
-    const teamHeader = document.querySelector('.firstPlayer h2')
-    const playerName = teamHeader.textContent
-    firstPlayer.textContent = `${playerName} has chosen`
-    thingClickedOn.textContent = 'Paper'
+    userChoice1('Paper')
   }
-  paperTeam1.addEventListener('click', addPaper1)
   // Scissors Team 1
   const scissorTeam1 = document.querySelector('.firstPlayer fieldset i.scissor')
   function addScissor1() {
-    const thingClickedOn = document.querySelector('.firstPlayer h3')
-    const firstPlayer = document.querySelector('.firstPlayer footer')
-    const teamHeader = document.querySelector('.firstPlayer h2')
-    const playerName = teamHeader.textContent
-    firstPlayer.textContent = `${playerName} has chosen`
-    thingClickedOn.textContent = 'Scissor'
+    userChoice1('Scissor')
   }
-  scissorTeam1.addEventListener('click', addScissor1)
   // Lizard Team 1
   const lizardTeam1 = document.querySelector('.firstPlayer fieldset i.lizard')
   function addLizard1() {
-    const thingClickedOn = document.querySelector('.firstPlayer h3')
-    const firstPlayer = document.querySelector('.firstPlayer footer')
-    const teamHeader = document.querySelector('.firstPlayer h2')
-    const playerName = teamHeader.textContent
-    firstPlayer.textContent = `${playerName} has chosen`
-    thingClickedOn.textContent = 'Lizard'
+    userChoice1('Lizard')
   }
-  lizardTeam1.addEventListener('click', addLizard1)
   // Spock Team 1
   const spockTeam1 = document.querySelector('.firstPlayer fieldset i.spock')
   function addSpock1() {
-    const thingClickedOn = document.querySelector('.firstPlayer h3')
-    const firstPlayer = document.querySelector('.firstPlayer footer')
-    const teamHeader = document.querySelector('.firstPlayer h2')
-    const playerName = teamHeader.textContent
-    firstPlayer.textContent = `${playerName} has chosen`
-    thingClickedOn.textContent = 'Spock'
+    userChoice1('Spock')
   }
+
+  lizardTeam1.addEventListener('click', addLizard1)
+  scissorTeam1.addEventListener('click', addScissor1)
+  paperTeam1.addEventListener('click', addPaper1)
   spockTeam1.addEventListener('click', addSpock1)
   // Team 1 name
   function updateListName1(event) {
@@ -68,59 +62,34 @@ function main() {
   // Rock Team 2
   const rockTeam2 = document.querySelector('.secondPlayer fieldset i.rock')
   function addRock2() {
-    const thingClickedOn = document.querySelector('.secondPlayer h3')
-    const firstPlayer = document.querySelector('.secondPlayer footer')
-    const teamHeader = document.querySelector('.secondPlayer h2')
-    const playerName = teamHeader.textContent
-    firstPlayer.textContent = `${playerName} has chosen`
-    thingClickedOn.textContent = 'Rock'
+    userChoice2('Rock')
   }
-  rockTeam2.addEventListener('click', addRock2)
   // Paper Team 2
   const paperTeam2 = document.querySelector('.secondPlayer fieldset i.paper')
   function addPaper2() {
-    const thingClickedOn = document.querySelector('.secondPlayer h3')
-    const firstPlayer = document.querySelector('.secondPlayer footer')
-    const teamHeader = document.querySelector('.secondPlayer h2')
-    const playerName = teamHeader.textContent
-    firstPlayer.textContent = `${playerName} has chosen`
-    thingClickedOn.textContent = 'Paper'
+    userChoice2('Paper')
   }
-  paperTeam2.addEventListener('click', addPaper2)
   // Scissors Team 2
   const scissorTeam2 = document.querySelector(
     '.secondPlayer fieldset i.scissor'
   )
   function addScissor2() {
-    const thingClickedOn = document.querySelector('.secondPlayer h3')
-    const firstPlayer = document.querySelector('.secondPlayer footer')
-    const teamHeader = document.querySelector('.secondPlayer h2')
-    const playerName = teamHeader.textContent
-    firstPlayer.textContent = `${playerName} has chosen`
-    thingClickedOn.textContent = 'Scissor'
+    userChoice2('Scissor')
   }
-  scissorTeam2.addEventListener('click', addScissor2)
   // Lizard Team 2
   const lizardTeam2 = document.querySelector('.secondPlayer fieldset i.lizard')
   function addLizard2() {
-    const thingClickedOn = document.querySelector('.secondPlayer h3')
-    const firstPlayer = document.querySelector('.secondPlayer footer')
-    const teamHeader = document.querySelector('.secondPlayer h2')
-    const playerName = teamHeader.textContent
-    firstPlayer.textContent = `${playerName} has chosen`
-    thingClickedOn.textContent = 'Lizard'
+    userChoice2('Lizard')
   }
-  lizardTeam2.addEventListener('click', addLizard2)
   // Spock Team 2
   const spockTeam2 = document.querySelector('.secondPlayer fieldset i.spock')
   function addSpock2() {
-    const thingClickedOn = document.querySelector('.secondPlayer h3')
-    const firstPlayer = document.querySelector('.secondPlayer footer')
-    const teamHeader = document.querySelector('.secondPlayer h2')
-    const playerName = teamHeader.textContent
-    firstPlayer.textContent = `${playerName} has chosen`
-    thingClickedOn.textContent = 'Spock'
+    userChoice2('Spock')
   }
+  lizardTeam2.addEventListener('click', addLizard2)
+  scissorTeam2.addEventListener('click', addScissor2)
+  paperTeam2.addEventListener('click', addPaper2)
+  rockTeam2.addEventListener('click', addRock2)
   spockTeam2.addEventListener('click', addSpock2)
   // Team 2 name
   function updateListName2(event) {
