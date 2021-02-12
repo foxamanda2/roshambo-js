@@ -156,12 +156,16 @@ function main() {
     .addEventListener('input', updateListName2)
 
   //  Comparisons
-  const winnerButton = document.querySelector('aside.winner button')
+  const winnerButton = document.querySelector('button#win')
+  let player1Score = 0
+  let player2Score = 0
   function winner() {
     const firstPlayer = document.querySelector('.firstPlayer h3')
     const firstPlayerChoice = firstPlayer.textContent
     const secondPlayer = document.querySelector('.secondPlayer h3')
     const secondPlayerChoice = secondPlayer.textContent
+    const numberOfWins1 = document.querySelector('.firstPlayer p')
+    const numberOfWins2 = document.querySelector('.secondPlayer p')
     if (firstPlayerChoice === secondPlayerChoice) {
       const draw1 = document.querySelector('.firstPlayer footer')
       const draw2 = document.querySelector('.secondPlayer footer')
@@ -184,17 +188,21 @@ function main() {
       const loser = document.querySelector('.secondPlayer footer')
       loser.textContent = ''
       winner.textContent = 'YOU WON!'
+      player1Score++
     } else {
       const winner = document.querySelector('.secondPlayer footer')
       const loser = document.querySelector('.firstPlayer footer')
       loser.textContent = ''
       winner.textContent = 'YOU WON!'
+      player2Score++
     }
+    numberOfWins1.textContent = `Win Counter:${player1Score}`
+    numberOfWins2.textContent = `Win Counter:${player2Score}`
   }
   winnerButton.addEventListener('click', winner)
 
   // Try Again
-  const tryAgainButton = document.querySelector('.tryAgain button')
+  const tryAgainButton = document.querySelector('#tryAgain')
   function tryAgain() {
     const firstPlayer = document.querySelector('.firstPlayer h3')
     const firstPlayerChoice = firstPlayer.textContent
@@ -213,5 +221,19 @@ function main() {
     userChoice2.textContent = ''
   }
   tryAgainButton.addEventListener('click', tryAgain)
+
+  // New Game
+  const newGame = document.querySelector('#newGame')
+  function newGameReset() {
+    const win1Score = document.querySelector('.firstPlayer p')
+    const win2Score = document.querySelector('.secondPlayer p')
+    win1Score.textContent = ''
+    win2Score.textContent = ''
+
+    player2Score = 0
+    player2Score = 0
+  }
+  newGame.addEventListener('click', newGameReset)
+  newGame.addEventListener('click', tryAgain)
 }
 document.addEventListener('DOMContentLoaded', main)

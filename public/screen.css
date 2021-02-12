@@ -57,6 +57,9 @@ fieldset i {
   background-color: rgba(35, 40, 70, 0.39);
   border: thin solid rgba(0, 0, 0, 0.521);
 }
+p {
+  color: white;
+}
 .firstPlayer footer {
   background-color: rgba(0, 0, 0, 0.445);
   color: rgb(170, 185, 204);
@@ -69,21 +72,11 @@ fieldset i {
   font-size: 30px;
   font-family: 'Major Mono Display', monospace;
 }
-.tryAgain button {
+article button {
   background-color: rgba(0, 0, 0, 0.582);
   color: rgb(170, 185, 204);
   border: none;
   font-size: 15px;
-}
-aside.winner {
-  justify-content: center;
-  /* margin: 0; */
-}
-aside.winner button {
-  background-color: rgba(0, 0, 0, 0.582);
-  color: rgb(170, 185, 204);
-  border: none;
-  font-size: 13px;
 }
 footer {
   position: absolute;
