@@ -61,11 +61,13 @@ fieldset i {
   background-color: rgba(0, 0, 0, 0.445);
   color: rgb(170, 185, 204);
   font-size: 30px;
+  font-family: 'Major Mono Display', monospace;
 }
 .secondPlayer footer {
   background-color: rgba(0, 0, 0, 0.39);
   color: rgb(170, 185, 204);
   font-size: 30px;
+  font-family: 'Major Mono Display', monospace;
 }
 .tryAgain button {
   background-color: rgba(0, 0, 0, 0.582);
@@ -81,7 +83,7 @@ aside.winner button {
   background-color: rgba(0, 0, 0, 0.582);
   color: rgb(170, 185, 204);
   border: none;
-  font-size: 15px;
+  font-size: 13px;
 }
 footer {
   position: absolute;

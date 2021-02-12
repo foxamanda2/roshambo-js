@@ -194,5 +194,24 @@ function main() {
   winnerButton.addEventListener('click', winner)
 
   // Try Again
+  const tryAgainButton = document.querySelector('.tryAgain button')
+  function tryAgain() {
+    const firstPlayer = document.querySelector('.firstPlayer h3')
+    const firstPlayerChoice = firstPlayer.textContent
+    const secondPlayer = document.querySelector('.secondPlayer h3')
+    const secondPlayerChoice = secondPlayer.textContent
+    const reset1 = document.querySelector('.firstPlayer footer')
+    const reset2 = document.querySelector('.secondPlayer footer')
+    const userChoice1 = document.querySelector('.firstPlayer h3')
+    const userChoice2 = document.querySelector('.secondPlayer h3')
+
+    firstPlayerChoice.textContent = ''
+    reset1.textContent = ''
+    userChoice1.textContent = ''
+    secondPlayerChoice.textContent = ''
+    reset2.textContent = ''
+    userChoice2.textContent = ''
+  }
+  tryAgainButton.addEventListener('click', tryAgain)
 }
 document.addEventListener('DOMContentLoaded', main)
