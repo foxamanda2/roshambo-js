@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-image: url('Space.jpg');
+  background-image: url('Space3.jpg');
   background-repeat: no-repeat;
   /* background-color: rgb(0, 0, 161); */
   background-size: 100%;
@@ -21,6 +21,14 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+header {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+  background-color: rgba(35, 40, 70, 0.342);
+  border: thin solid rgba(0, 0, 0, 0.349);
+  color: rgb(170, 185, 204);
+}
 section {
   min-width: 20rem;
   border-radius: 0.3rem;
@@ -29,56 +37,65 @@ section {
   flex-direction: column;
   align-items: center;
 }
-header {
-  font-size: 3rem;
-  text-align: center;
+h2 {
+  color: rgb(170, 185, 204);
   font-family: 'Major Mono Display', monospace;
-  background-color: rgba(35, 40, 70, 0.342);
-  border: thin solid rgba(0, 0, 0, 0.349);
-  color: white;
 }
-footer {
-  position: absolute;
-  bottom: 0;
+h3 {
+  display: none;
 }
-.tryAgain button {
-  background-color: rgba(0, 0, 0, 0.582);
-  color: white;
-  border: none;
-  font-size: 15px;
-}
-section footer {
-  background-color: white;
+img {
+  width: 50%;
+  height: 50%;
 }
 fieldset {
   border: none;
 }
 fieldset i {
-  color: white;
+  color: rgb(170, 185, 204);
   font-size: 40px;
   background-color: rgba(35, 40, 70, 0.39);
   border: thin solid rgba(0, 0, 0, 0.521);
 }
-h3 {
-  display: none;
+.firstPlayer footer {
+  background-color: rgba(0, 0, 0, 0.445);
+  color: rgb(170, 185, 204);
+  font-size: 30px;
 }
-h2 {
-  color: burlywood;
+.secondPlayer footer {
+  background-color: rgba(0, 0, 0, 0.39);
+  color: rgb(170, 185, 204);
+  font-size: 30px;
 }
-section.winner {
-  justify-content: center;
-}
-section.winner button {
+.tryAgain button {
   background-color: rgba(0, 0, 0, 0.582);
-  color: white;
+  color: rgb(170, 185, 204);
   border: none;
-  font-size: 20px;
+  font-size: 15px;
 }
-/* img {
-  background-color: rgba(35, 40, 70, 0.151);
-} */
-@media (max-width: 800px) {
+aside.winner {
+  justify-content: center;
+  /* margin: 0; */
+}
+aside.winner button {
+  background-color: rgba(0, 0, 0, 0.582);
+  color: rgb(170, 185, 204);
+  border: none;
+  font-size: 15px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 900px) {
   body {
+    background-image: url('Space4.jpg');
     background-repeat: round;
+  }
+  footer {
+    display: flex;
+  }
+  footer button {
+    align-self: flex-end;
   }
 }
