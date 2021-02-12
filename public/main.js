@@ -19,31 +19,58 @@ function main() {
     thingClickedOn.textContent = choice
   }
 
+  // Rock, Paper, Scissor, Lizard, Spock Team 1
   function addRock1() {
-    userChoice1('Rock')
+    const firstPlayer = document.querySelector('.firstPlayer h3')
+    const firstPlayerChoice = firstPlayer.textContent
+    if (firstPlayerChoice === '') {
+      userChoice1('Rock')
+    } else {
+      window.alert('You cant choose again')
+    }
   }
   rockTeam1.addEventListener('click', addRock1)
-  // Paper Team 1
   const paperTeam1 = document.querySelector('.firstPlayer fieldset i.paper')
   function addPaper1() {
-    userChoice1('Paper')
+    const firstPlayer = document.querySelector('.firstPlayer h3')
+    const firstPlayerChoice = firstPlayer.textContent
+    if (firstPlayerChoice === '') {
+      userChoice1('Paper')
+    } else {
+      window.alert('You cant choose again')
+    }
   }
-  // Scissors Team 1
   const scissorTeam1 = document.querySelector('.firstPlayer fieldset i.scissor')
   function addScissor1() {
-    userChoice1('Scissor')
+    const firstPlayer = document.querySelector('.firstPlayer h3')
+    const firstPlayerChoice = firstPlayer.textContent
+    if (firstPlayerChoice === '') {
+      userChoice1('Scissor')
+    } else {
+      window.alert('You cant choose again')
+    }
   }
-  // Lizard Team 1
   const lizardTeam1 = document.querySelector('.firstPlayer fieldset i.lizard')
   function addLizard1() {
-    userChoice1('Lizard')
+    const firstPlayer = document.querySelector('.firstPlayer h3')
+    const firstPlayerChoice = firstPlayer.textContent
+    if (firstPlayerChoice === '') {
+      userChoice1('Lizard')
+    } else {
+      window.alert('You cant choose again')
+    }
   }
-  // Spock Team 1
   const spockTeam1 = document.querySelector('.firstPlayer fieldset i.spock')
   function addSpock1() {
-    userChoice1('Spock')
+    const firstPlayer = document.querySelector('.firstPlayer h3')
+    const firstPlayerChoice = firstPlayer.textContent
+    if (firstPlayerChoice === '') {
+      userChoice1('Spock')
+    } else {
+      window.alert('You cant choose again')
+    }
   }
-
+  rockTeam1.addEventListener('click', addRock1)
   lizardTeam1.addEventListener('click', addLizard1)
   scissorTeam1.addEventListener('click', addScissor1)
   paperTeam1.addEventListener('click', addPaper1)
@@ -59,32 +86,58 @@ function main() {
     .querySelector('.firstPlayer input')
     .addEventListener('input', updateListName1)
 
-  // Rock Team 2
+  // Rock, Paper, Scissor, Lizard, Spock Team 2
   const rockTeam2 = document.querySelector('.secondPlayer fieldset i.rock')
   function addRock2() {
-    userChoice2('Rock')
+    const secondPlayer = document.querySelector('.secondPlayer h3')
+    const secondPlayerChoice = secondPlayer.textContent
+    if (secondPlayerChoice === '') {
+      userChoice2('Rock')
+    } else {
+      window.alert('You cant choose again')
+    }
   }
-  // Paper Team 2
   const paperTeam2 = document.querySelector('.secondPlayer fieldset i.paper')
   function addPaper2() {
-    userChoice2('Paper')
+    const secondPlayer = document.querySelector('.secondPlayer h3')
+    const secondPlayerChoice = secondPlayer.textContent
+    if (secondPlayerChoice === '') {
+      userChoice2('Paper')
+    } else {
+      window.alert('You cant choose again')
+    }
   }
-  // Scissors Team 2
   const scissorTeam2 = document.querySelector(
     '.secondPlayer fieldset i.scissor'
   )
   function addScissor2() {
-    userChoice2('Scissor')
+    const secondPlayer = document.querySelector('.secondPlayer h3')
+    const secondPlayerChoice = secondPlayer.textContent
+    if (secondPlayerChoice === '') {
+      userChoice2('Scissor')
+    } else {
+      window.alert('You cant choose again')
+    }
   }
-  // Lizard Team 2
   const lizardTeam2 = document.querySelector('.secondPlayer fieldset i.lizard')
   function addLizard2() {
-    userChoice2('Lizard')
+    const secondPlayer = document.querySelector('.secondPlayer h3')
+    const secondPlayerChoice = secondPlayer.textContent
+    if (secondPlayerChoice === '') {
+      userChoice2('Lizard')
+    } else {
+      window.alert('You cant choose again')
+    }
   }
-  // Spock Team 2
   const spockTeam2 = document.querySelector('.secondPlayer fieldset i.spock')
   function addSpock2() {
-    userChoice2('Spock')
+    const secondPlayer = document.querySelector('.secondPlayer h3')
+    const secondPlayerChoice = secondPlayer.textContent
+    if (secondPlayerChoice === '') {
+      userChoice2('Spock')
+    } else {
+      window.alert('You cant choose again')
+    }
   }
   lizardTeam2.addEventListener('click', addLizard2)
   scissorTeam2.addEventListener('click', addScissor2)
