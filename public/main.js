@@ -171,8 +171,7 @@ function main() {
       const draw2 = document.querySelector('.secondPlayer footer')
       draw1.textContent = 'ITS A DRAW'
       draw2.textContent = 'ITS A DRAW'
-    }
-    if (
+    } else if (
       (firstPlayerChoice === 'Rock' && secondPlayerChoice === 'Scissor') ||
       (firstPlayerChoice === 'Rock' && secondPlayerChoice === 'Lizard') ||
       (firstPlayerChoice === 'Scissor' && secondPlayerChoice === 'Paper') ||
