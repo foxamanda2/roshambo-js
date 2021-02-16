@@ -12,8 +12,7 @@ body {
   margin: 0;
   min-height: 100%;
   background-image: url('Space3.jpg');
-  background-repeat: no-repeat;
-  /* background-color: rgb(0, 0, 161); */
+  background-repeat: repeat;
   background-size: 100%;
 }
 main {
@@ -86,11 +85,5 @@ footer {
   body {
     background-image: url('Space4.jpg');
     background-repeat: round;
-  }
-  footer {
-    display: flex;
-  }
-  footer button {
-    align-self: flex-end;
   }
 }

@@ -155,7 +155,7 @@ function main() {
     .querySelector('.secondPlayer input')
     .addEventListener('input', updateListName2)
 
-  //  Comparisons
+  //  Calculate winner
   const winnerButton = document.querySelector('button#win')
   let player1Score = 0
   let player2Score = 0
